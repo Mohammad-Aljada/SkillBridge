@@ -40,6 +40,7 @@ body {
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
@@ -87,11 +88,20 @@ header .auth {
 .auth .sign-up {
   color: var(--grey-15);
 }
+.auth .sign-up:hover{
+  background-color:#ffeacc ;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
 .auth .login {
   background-color: var(--orange-50);
   padding: 12px 24px;
   border-radius: 8px;
   color: var(--white-95);
+}
+.auth .login:hover{
+  color: #262626;
+  background-color: #f1f1f3;
 }
 /* phone */
 @media screen and (max-width: 599px) {
@@ -229,10 +239,18 @@ header .auth {
   background-color: var(--orange-50);
   color: var(--white-97);
 }
+.hero .row .hero-info .hero-link .explore:hover {
+  color: #262626;
+  background-color: #f1f1f3;
+}
+
 
 .hero .row .hero-info .hero-link .pricing {
   background-color: var(--white-99);
   color: #262626;
+}
+.hero .row .hero-info .hero-link .pricing:hover{
+  background-color:#ffeacc;
 }
 
 /* phone */
@@ -465,6 +483,10 @@ header .auth {
   padding: 14px 20px;
   color: #262626;
 }
+.benfit-btn a:hover {
+  color: var(--white-99);
+  background-color: #ff9500;
+}
 .benfits .row .benfit-cards {
   display: flex;
   flex-wrap: wrap;
@@ -480,6 +502,14 @@ header .auth {
   border-radius: 10px;
   padding: 40px;
   width: calc((100% - 40px) / 3);
+  transition: transform 2s;
+  transform: (0);
+  cursor: pointer;
+}
+.benfit-cards .benfit-card:hover{
+  transform: scale(1.15);
+  box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .benfit-card .benfit-title h2 {
@@ -606,6 +636,10 @@ header .auth {
   padding: 14px 20px;
   color: #262626;
 }
+.ourcourse-btn a:hover {
+  background-color: #ff9500;
+  color: #fcfcfd;
+}
 .ourcourse-cards {
   display: flex;
   flex-wrap: wrap;
@@ -621,6 +655,10 @@ header .auth {
   border-radius: 10px;
   border: 1px solid var(--white-95);
   justify-content: space-between;
+  cursor: pointer;
+}
+.ourcourse-cards .ourcourse-card:hover{
+  box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
 }
 
 .ourcourse-card .card-img img {
@@ -680,6 +718,12 @@ header .auth {
   font-size: 14px;
   font-weight: 500;
 }
+.ourcourse-card .card-btn:hover {
+  color: #fcfcfd;
+  background-color: #ff9500;
+}
+
+
 /* phone */
 @media screen and (max-width: 599px) {
   .our-courses {
@@ -797,10 +841,16 @@ header .auth {
   padding: 14px 20px;
   color: var(--grey-15);
 }
+.testimonial-btn a:hover {
+  background-color: #ff9500;
+  color: #fcfcfd;
+}
+
 .testimonial-items {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  
 }
 .testimonial-item {
   display: flex;
@@ -809,6 +859,10 @@ header .auth {
   border: 1px solid var(--white-95);
   background: var(--primary-white);
   width: calc((100% - 20px) / 2);
+  cursor: pointer;
+}
+.testimonial-item:hover{
+  box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
 }
 .testimonial-item .testimonial-text {
   padding: 40px;
@@ -851,6 +905,11 @@ header .auth {
   font-size: 14px;
   font-weight: 500;
 }
+.testimonial-info a:hover {
+  background-color: #ff9500;
+  color: #fcfcfd;
+}
+
 /* phone */
 @media screen and (max-width: 599px) {
   .our-testimonials {
@@ -990,6 +1049,10 @@ header .auth {
   background-color: var(--white-99);
   align-items: center;
   width: calc((100% - 30px) / 2);
+  cursor: pointer;
+}
+.pricing-items .pricing-item:hover {
+  box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
 }
 
 .pricing-item .pricing-title {
@@ -1064,8 +1127,15 @@ header .auth {
 .pricing-list .pricing-features ul li .check {
   background-color: #ffeacc;
 }
+.pricing-list .pricing-features ul li .check:hover{
+  background-color: #ff9500;
+}
+
 .pricing-list .pricing-features ul li .Uncheck {
   border: 1px solid var(--white-95);
+}
+.pricing-list .pricing-features ul li .Uncheck:hover {
+  background-color: #ff9500;
 }
 
 .pricing-list .pricing-features ul li p {
@@ -1082,6 +1152,10 @@ header .auth {
   border-radius: 0px 0px 8px 8px;
   background: var(--orange-50);
 }
+.pricing-list .pricing-btn:hover {
+background-color: #262626;
+}
+
 .pricing-btn a {
   color: #fff;
   font-size: 14px;
@@ -1262,6 +1336,10 @@ footer .footer-end {
   background-color: var(--white-97);
   padding: 8px 10px;
 }
+.footer-items .nav a:hover {
+  background-color: #ffeacc;
+}
+
 
 .footer-items .nav a img {
   width: 20px;
