@@ -44,6 +44,16 @@ a {
 ul {
   list-style: none;
 }
+@media screen and (max-width: 599px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+@media screen and (min-width: 1193px) {
+  .container {
+    width: calc(100% - 320px);
+  }
+}
 
 /*header*/
 header {
@@ -88,8 +98,8 @@ header .auth {
 .auth .sign-up {
   color: var(--grey-15);
 }
-.auth .sign-up:hover{
-  background-color:#ffeacc ;
+.auth .sign-up:hover {
+  background-color: #ffeacc;
   padding: 12px 24px;
   border-radius: 8px;
 }
@@ -99,16 +109,12 @@ header .auth {
   border-radius: 8px;
   color: var(--white-95);
 }
-.auth .login:hover{
+.auth .login:hover {
   color: #262626;
   background-color: #f1f1f3;
 }
 /* phone */
 @media screen and (max-width: 599px) {
-  .container {
-    width: calc(100% - 32px);
-  }
-
   header .row {
     gap: 20px;
   }
@@ -149,15 +155,6 @@ header .auth {
 }
 
 @media screen and (min-width: 1193px) {
-  nav a {
-    font-size: 18px;
-  }
-  header .auth {
-    font-size: 18px;
-  }
-  .auth .login {
-    padding: 12px 34px;
-  }
 }
 /*end header*/
 
@@ -244,13 +241,12 @@ header .auth {
   background-color: #f1f1f3;
 }
 
-
 .hero .row .hero-info .hero-link .pricing {
   background-color: var(--white-99);
   color: #262626;
 }
-.hero .row .hero-info .hero-link .pricing:hover{
-  background-color:#ffeacc;
+.hero .row .hero-info .hero-link .pricing:hover {
+  background-color: #ffeacc;
 }
 
 /* phone */
@@ -295,32 +291,6 @@ header .auth {
 
 /* desktop */
 @media screen and (min-width: 1193px) {
-  .hero .row .hero-info {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-  .hero .row .hero-info .hero-title {
-    padding: 14px 30px 14px 20px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-  }
-  .hero .row .hero-info .hero-title h1 {
-    font-size: 48px;
-  }
-  .hero .row .hero-info h2 {
-    font-size: 38px;
-    margin-bottom: 10px;
-  }
-  .hero .row .hero-info p {
-    font-size: 18px;
-    margin-bottom: 60px;
-  }
-  .hero .row .hero-info .hero-link a {
-    padding: 18px 24px;
-    font-weight: 600;
-    font-size: 18px;
-    border-radius: 8px;
-  }
 }
 /*end hero*/
 
@@ -474,7 +444,7 @@ header .auth {
 }
 .benfit-header .benfit-btn {
   display: flex;
-  align-items: flex-end;
+  align-self: flex-end;
 }
 .benfit-btn a {
   background-color: var(--white-99);
@@ -506,10 +476,9 @@ header .auth {
   transform: (0);
   cursor: pointer;
 }
-.benfit-cards .benfit-card:hover{
+.benfit-cards .benfit-card:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
-
 }
 
 .benfit-card .benfit-title h2 {
@@ -657,7 +626,7 @@ header .auth {
   justify-content: space-between;
   cursor: pointer;
 }
-.ourcourse-cards .ourcourse-card:hover{
+.ourcourse-cards .ourcourse-card:hover {
   box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -722,7 +691,6 @@ header .auth {
   color: #fcfcfd;
   background-color: #ff9500;
 }
-
 
 /* phone */
 @media screen and (max-width: 599px) {
@@ -850,7 +818,6 @@ header .auth {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  
 }
 .testimonial-item {
   display: flex;
@@ -861,7 +828,7 @@ header .auth {
   width: calc((100% - 20px) / 2);
   cursor: pointer;
 }
-.testimonial-item:hover{
+.testimonial-item:hover {
   box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 0.05);
 }
 .testimonial-item .testimonial-text {
@@ -1036,6 +1003,7 @@ header .auth {
   background-color: white;
   padding: 50px;
   border-radius: 12px;
+  width: 100%;
 }
 
 .pricing-items .pricing-item {
@@ -1127,7 +1095,7 @@ header .auth {
 .pricing-list .pricing-features ul li .check {
   background-color: #ffeacc;
 }
-.pricing-list .pricing-features ul li .check:hover{
+.pricing-list .pricing-features ul li .check:hover {
   background-color: #ff9500;
 }
 
@@ -1153,7 +1121,7 @@ header .auth {
   background: var(--orange-50);
 }
 .pricing-list .pricing-btn:hover {
-background-color: #262626;
+  background-color: #262626;
 }
 
 .pricing-btn a {
@@ -1339,7 +1307,6 @@ footer .footer-end {
 .footer-items .nav a:hover {
   background-color: #ffeacc;
 }
-
 
 .footer-items .nav a img {
   width: 20px;
